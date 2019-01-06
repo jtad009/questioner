@@ -63,10 +63,13 @@ h1 {
 }
 .inner-div
 {
-     background-color: #f3f2ef;
+     /*background-color: #f3f2ef;*/
      border-radius: 3px;
      width: 500px;
      height: 100px; 
+}
+.inner-div>h1{
+    background-color:#132437;
 }
  .navigation > div >a,a{
       text-align: right;
