@@ -96,7 +96,7 @@ app.post('/api/v1/meetups/:id/rsvps',function(request,response){
 	response.json(meetups.rsvp(request.params.id,request.body));
 });
 //listen on port 5000
-app.listen(5000);
+app.listen(process.env.PORT || 5000);
 
 console.log("Express app running on port 5000");
 module.exports = app; //this allow for this files inclusion in other modules
