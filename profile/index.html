@@ -22,7 +22,7 @@
     <div> <img src="../images/avatar.jpg" class="user_passport"  /></div>
     <div class="navigation">
           <a href="index.html" class="active">View Profile</a>
-          <a href="../admin/index.html">Admin Page</a>
+          <!-- <a href="../admin/index.html">Admin Page</a> -->
           <a href="../dashboard.html">Meetup Listing</a>
           <a href="../index.html">Logout</a>
       <br/>
@@ -85,11 +85,11 @@
                     <div align="center">
                          <span class="meetup_activity_span" style="font-size:10px; color:#000">
                               <span id="countTrue">4</span>
-                              <a href="#"  id="likeButton" data-src="21" title="upvote"><ion-icon src="images/thumbs-up.svg" style="color:black; font-size:20px"></ion-icon></a> &nbsp;&nbsp;
+                              <a href="#"  id="likeButton" data-src="21" title="upvote"><ion-icon src="../images/thumbs-up.svg" style="color:black; font-size:20px"></ion-icon></a> &nbsp;&nbsp;
                               <span id="countTrue">4</span>
-                              <a href="#"  id="dislikeButton" data-src="21" title="downvote"><ion-icon src="images/thumbs-down.svg" style="color:black; font-size:20px"></ion-icon></a> &nbsp;&nbsp;
+                              <a href="#"  id="dislikeButton" data-src="21" title="downvote"><ion-icon src="../images/thumbs-down.svg" style="color:black; font-size:20px"></ion-icon></a> &nbsp;&nbsp;
                               <span id="countOpinion">7</span>
-                              <a href="#"  id="showOpinion" onclick="showOpinion();return false;" title="show comments"><ion-icon src="images/megaphone.svg" style="color:black; font-size:20px"></ion-icon></a>
+                              <a href="#"  id="showOpinion" onclick="showOpinion();return false;" title="show comments"><ion-icon src="../images/megaphone.svg" style="color:black; font-size:20px"></ion-icon></a>
                           </span>
                             
                     </div>
@@ -157,11 +157,11 @@
                 <div align="center">
                      <span class="meetup_activity_span" style="font-size:10px; color:#000">
                               <span id="countTrue">4</span>
-                              <a href="#"  id="likeButton" data-src="21" title="upvote"><ion-icon src="images/thumbs-up.svg" style="color:black; font-size:20px"></ion-icon></a> &nbsp;&nbsp;
+                              <a href="#"  id="likeButton" data-src="21" title="upvote"><ion-icon src="../images/thumbs-up.svg" style="color:black; font-size:20px"></ion-icon></a> &nbsp;&nbsp;
                               <span id="countTrue">4</span>
-                              <a href="#"  id="dislikeButton" data-src="21" title="downvote"><ion-icon src="images/thumbs-down.svg" style="color:black; font-size:20px"></ion-icon></a> &nbsp;&nbsp;
+                              <a href="#"  id="dislikeButton" data-src="21" title="downvote"><ion-icon src="../images/thumbs-down.svg" style="color:black; font-size:20px"></ion-icon></a> &nbsp;&nbsp;
                               <span id="countOpinion">7</span>
-                              <a href="#"  id="showOpinion" onclick="showOpinion();return false;" title="show comments"><ion-icon src="images/megaphone.svg" style="color:black; font-size:20px"></ion-icon></a>
+                              <a href="#"  id="showOpinion" onclick="showOpinion();return false;" title="show comments"><ion-icon src="../images/megaphone.svg" style="color:black; font-size:20px"></ion-icon></a>
                           </span>
                         
                 </div>
@@ -192,11 +192,11 @@
                     <div align="center">
                          <span class="meetup_activity_span" style="font-size:10px; color:#000">
                               <span id="countTrue">4</span>
-                              <a href="#"  id="likeButton" data-src="21" title="upvote"><ion-icon src="images/thumbs-up.svg" style="color:black; font-size:20px"></ion-icon></a> &nbsp;&nbsp;
+                              <a href="#"  id="likeButton" data-src="21" title="upvote"><ion-icon src="../images/thumbs-up.svg" style="color:black; font-size:20px"></ion-icon></a> &nbsp;&nbsp;
                               <span id="countTrue">4</span>
-                              <a href="#"  id="dislikeButton" data-src="21" title="downvote"><ion-icon src="images/thumbs-down.svg" style="color:black; font-size:20px"></ion-icon></a> &nbsp;&nbsp;
+                              <a href="#"  id="dislikeButton" data-src="21" title="downvote"><ion-icon src="../images/thumbs-down.svg" style="color:black; font-size:20px"></ion-icon></a> &nbsp;&nbsp;
                               <span id="countOpinion">7</span>
-                              <a href="#"  id="showOpinion" onclick="showOpinion();return false;" title="show comments"><ion-icon src="images/megaphone.svg" style="color:black; font-size:20px"></ion-icon></a>
+                              <a href="#"  id="showOpinion" onclick="showOpinion();return false;" title="show comments"><ion-icon src="../images/megaphone.svg" style="color:black; font-size:20px"></ion-icon></a>
                           </span>
                             
                     </div>
@@ -249,8 +249,9 @@
   </div>  
   </div>
   </body>
+  <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
   <script>
-    console.log();
+    
      function showOpinion(){
          if(document.getElementById('opinion_div20').style.display == "none"){
 
