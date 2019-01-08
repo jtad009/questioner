@@ -14,9 +14,10 @@
     <img src="images/bp-logo-home.png"    width="180px" class="logo" />
     <div> <img src="images/avatar.jpg" class="user_passport"  /></div>
     <div class="navigation">
-       <a href="profile/index.html">View Profile</a> 
-      <a href="dashboard.html">Meetup Listing</a> 
-      <a href="#">Logout</a> 
+        <a href="profile/index.html" >View Profile</a>
+        <!-- <a href="admin/index.html">Admin Page</a> -->
+        <a href="dashboard.html" class="active">Meetup Listing</a>
+        <a href="index.html">Logout</a>
       <br/>
       
     </div>
@@ -31,11 +32,11 @@
         <div class="feed">
                   <div class="feed_head">
                       <img src="images/avatar.jpg" width="50" height="50" class="feed_photo" />
-                      <div style="float:left" align="left">
-                          <span class="pstname" data-src="3">
-                              <a href="#"   class="username" >Imo Douglas</a><br>
-                          </span>
-                          <span class="feed_timestamp">Sun . 10:40 PM . 14/12/14</span>
+                      <div style="float:left;margin-left:12px" align="left">
+                          <p class="pstname" data-src="3">
+                              <a href="#"   class="username" >Imo Douglas</a>
+                          </p>
+                          <p class="feed_timestamp">Sun . 10:40 PM . 14/12/14</p>
                       </div>
                   </div>
                   <div class="feed_body">
@@ -87,8 +88,8 @@
                       <div align="center">
                         <span class="meetup_activity_span">
                             <span class="activity_count">4</span>
-                            <a href="question-details.html"  id="view_questions" ><img src="images/visible.png" height="14" title="Questions"></a> &nbsp;&nbsp;
-                            <a href="#"  id="rsvp" ><img src="images/bell.gif" height="13" title="Rsvp"></a> &nbsp;&nbsp;
+                            <a href="question-details.html"  id="view_questions" title="view questions"><ion-icon src="images/eye.svg" style="color:black; font-size:20px"></ion-icon> &nbsp;&nbsp;
+                                <a href="#"  id="rsvp" title="RSVP FOR MEETUP" ><ion-icon src="images/notifications-outline.svg" style="color:black; font-size:20px"></ion-icon> &nbsp;&nbsp;
                             
                         </span> 
                             
@@ -98,11 +99,11 @@
         <div class="feed">
                   <div class="feed_head">
                       <img src="images/avatar.jpg" width="50" height="50" class="feed_photo" />
-                      <div style="float:left" align="left">
-                          <span class="pstname" data-src="3">
+                      <div style="float:left;margin-left:12px" align="left">
+                          <p class="pstname" data-src="3">
                               <a href="#"   class="username" >Imo Douglas</a><br>
-                          </span>
-                          <span class="feed_timestamp">Sun . 10:40 PM . 14/12/14</span>
+                          </p>
+                          <p class="feed_timestamp">Sun . 10:40 PM . 14/12/14</p>
                       </div>
                   </div>
                   <div class="feed_body">
@@ -114,8 +115,8 @@
                       <div align="center">
                         <span class="meetup_activity_span">
                             <span class="activity_count">4</span>
-                            <a href="question-details.html"  id="view_questions" ><img src="images/visible.png" height="14" title="Questions"></a> &nbsp;&nbsp;
-                            <a href="#"  id="rsvp" ><img src="images/bell.gif" height="13" title="Rsvp"></a> &nbsp;&nbsp;
+                            <a href="#"  id="view_questions" title="view questions"><ion-icon src="images/eye.svg" style="color:black; font-size:20px"></ion-icon> &nbsp;&nbsp;
+                                <a href="#"  id="rsvp" title="RSVP FOR MEETUP" ><ion-icon src="images/notifications-outline.svg" style="color:black; font-size:20px"></ion-icon> &nbsp;&nbsp;
                         </span> 
                             
                       </div>
@@ -124,15 +125,15 @@
         <div class="feed">
                     <div class="feed_head">
                         <img src="images/avatar.jpg" width="50" height="50" class="feed_photo" />
-                        <div style="float:left" align="left">
-                            <span class="pstname" data-src="3">
+                        <div style="float:left;margin-left:12px" align="left">
+                            <p class="pstname" data-src="3">
                                 <a href="#"   class="username" >Imo Douglas</a><br>
-                            </span>
-                            <span class="feed_timestamp">Sun . 10:40 PM . 14/12/14</span>
+                            </p>
+                            <p class="feed_timestamp">Sun . 10:40 PM . 14/12/14</p>
                         </div>
                     </div>
                     <div class="feed_body">
-                      <img src="images/54620ef4a1a3e.JPG" width="70%" class="postimg2" align="right">
+                      <img src="images/54620ef4a1a3e.JPG" width="100%" class="postimg2" align="center">
                       <span class="category_title"><strong>Events</strong>-</span>
                       This is the most amazing bit of concept that has ever gone out to the world and i like every bit of it till date. So tell me who amazes you the most in all things scared.
                     </div>
@@ -140,8 +141,8 @@
                         <div align="center">
                           <span class="meetup_activity_span">
                               <span class="activity_count">4</span>
-                              <a href="question-details.html"  id="view_questions" ><img src="images/visible.png" height="14" title="Questions"></a> &nbsp;&nbsp;
-                              <a href="#"  id="rsvp" ><img src="images/bell.gif" height="13" title="Rsvp"></a> &nbsp;&nbsp;
+                              <a href="#"  id="view_questions" title="view questions"><ion-icon src="images/eye.svg" style="color:black; font-size:20px"></ion-icon> &nbsp;&nbsp;
+                                  <a href="#"  id="rsvp" title="RSVP FOR MEETUP" ><ion-icon src="images/notifications-outline.svg" style="color:black; font-size:20px"></ion-icon> &nbsp;&nbsp;
                           </span> 
                               
                         </div>
@@ -149,8 +150,8 @@
         </div>
          </div>
     <!-- end meetup listing -->
-  </div>  
-  
+  </div>
+      <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
   <!-- <div class="footer">Footer</div> -->
   </div>
   
