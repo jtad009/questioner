@@ -1,6 +1,6 @@
  <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
     <style>
 
     </style>
@@ -11,25 +11,31 @@
     <div class="inner-div">
       <h1><img src="images/bp-logo-home.png" class="logo" align="center"/></h1>
 
-        <form class="login" action="" method="post"> 
+        <form class="login" action="admin/index.html" method="get">
              
              
             <div>
+                <label>USERNAME</label>
               <input type="text" name="username" id="username" placeholder="username"></div>
              
             <div>
+                <label>PASSWORD</label><a href="/forgot" class="forgot_pw_link">FORGOT PASSWORD?</a>
               <input type="password" name="password" id="password" placeholder="password"></div>
               
               <br/>
                 <br/>
             <div class="actions">
             
-              <input type="submit" name="login" value="Login"> <a href="/forgot">I forgot my password</a>
+              <input type="submit" name="login" value="LOGIN" class="login_button">
+                <!--<a href="/forgot">I forgot my password</a>-->
             </div>
         </form>
-        <br/> 
+        <br/>
+        <div class="a-divider">
+            <h5>NEW TO QUESTIONER?</h5>
+        </div>
         <div class="account">
-          <p style="text-align: center;">Create a new account <a href="sign-up.html">here</a>.</p>
+            <input type="submit" name="login" value="CREATE YOUR QUESTIONER ACCOUNT" class="signup_button">
         </div>
 
         
@@ -38,4 +44,5 @@
        
   </div>
 </body>
+
 </html>
