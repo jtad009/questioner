@@ -30,6 +30,5 @@ app.use((request, response, next) => {
 });
 app.use('/api/v1/meetups', meetupsRoutes);
 app.use('/api/v1/questions', questionsRoutes);
-
 module.exports = app;
 
