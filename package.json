@@ -4,15 +4,21 @@
   "description": "Questioner helps the meetup organizer prioritize questions to be answered. Users can vote on asked questions and the bubble to the top or bottom of the of the log",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "test": "mocha --require babel-register ./test/**/*-spec.js",
+    "start": "nodemon server.js --exec babel-node --presets babel-preset-env"
   },
-  "engines":{
-    "node":"10.13.0"
+  "engines": {
+    "node": "10.13.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jtad009/questioner.git"
+  },
+  "babel": {
+    "presets": [
+      "env","stage-3",
+      "latest"
+    ]
   },
   "keywords": [
     "priority",
@@ -28,12 +34,22 @@
   },
   "homepage": "https://github.com/jtad009/questioner#readme",
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
     "express": "^4.16.4"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "babel-register": "^6.26.0",
     "chai": "^4.2.0",
+    "nodemon": "^1.18.9",
     "rewire": "^4.0.1",
     "supertest": "^3.3.0"
   }
