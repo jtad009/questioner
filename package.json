@@ -16,7 +16,8 @@
   },
   "babel": {
     "presets": [
-      "env","stage-3",
+      "env",
+      "stage-3",
       "latest"
     ]
   },
@@ -49,6 +50,7 @@
     "babel-preset-stage-3": "^6.24.1",
     "babel-register": "^6.26.0",
     "chai": "^4.2.0",
+    "mocha": "^5.2.0",
     "nodemon": "^1.18.9",
     "rewire": "^4.0.1",
     "supertest": "^3.3.0"
