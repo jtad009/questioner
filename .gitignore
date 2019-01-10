@@ -1,5 +1,3 @@
 node_modules/
-.idea
 .vscode
-app-v1.js
 Procfile
