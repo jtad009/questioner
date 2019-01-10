@@ -5,3 +5,4 @@ const server = http.createServer(app);
 server.listen(port, () => {
     return console.log('Express app running on port 4000');
 });
+module.exports = server;

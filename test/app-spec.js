@@ -31,6 +31,21 @@ describe("Questioner App", function () {
           ]
         }, done);
     });
+    it('it should throw a 404 error when a wrong meetup Id is supplied.', function () {
+      let def = this.def;
+      request(app)
+        .get("/api/v1/meetups/12")
+        .set('Accept', 'application/json')
+        .expect('Content-type', /json/)
+        .expect(404)
+        .end(function (error, response) {
+          
+          expect(response.body).to.have.property('status');
+          expect(response.body.status).to.equal(404);
+          expect(response.body).to.have.property('data');
+          expect(response.body.data).to.equal("invalid meetup id supplied");
+        });
+    });
   });
   describe("Get all meetups", function (done) {
     beforeEach(function () {
@@ -122,6 +137,21 @@ describe("Questioner App", function () {
           expect(response.body.data[0].location).to.equal("calabar");
         });
     });
+    it('Throw a 404 error if the user pressed the post button in error and supplied an empty meetup.', function () {
+      let def = this.def;
+      request(app)
+        .post("/api/v1/meetups/")
+        .set('Accept', 'application/x-www-form-urlencoded')
+        .send({})
+        .expect('Content-type', /json/)
+        .expect(200)
+        .end(function (error, response) {
+          expect(response.body).to.have.property('status');
+          expect(response.body.status).to.equal(404);
+          expect(response.body).to.have.property('data');
+          expect(response.body.data).to.equal("Sorry, meetup data cannot be empty");
+        });
+    });
   });
   describe("Get all meetup questions", function (done) {
     beforeEach(function () {
@@ -135,7 +165,9 @@ describe("Questioner App", function () {
             "meetup": 1,
             "title": "How to create data structures",
             "body": "How can i do this and that from time to time in the mix",
-            "votes": 10
+            "votes": 10,
+            "upVotes":2,
+            "downVotes":1
           },
           {
             "id": 2,
@@ -144,7 +176,9 @@ describe("Questioner App", function () {
             "meetup": 2,
             "title": "How to create data structures",
             "body": "How can i do this and that from time to time in the mix",
-            "votes": 10
+            "votes": 10,
+            "upVotes":2,
+            "downVotes":1
           }
         ]
       };
@@ -210,6 +244,21 @@ describe("Questioner App", function () {
           expect(response.body.data[0].body).to.equal("How can i do this and that from time to time in the mix");
         });
     });
+    it('Throw a 404 error if the user pressed the post button in error and supplied an empty question.', function () {
+      let def = this.def;
+      request(app)
+        .post("/api/v1/questions/")
+        .set('Accept', 'application/x-www-form-urlencoded')
+        .send({})
+        .expect('Content-type', /json/)
+        .expect(200)
+        .end(function (error, response) {
+          expect(response.body).to.have.property('status');
+          expect(response.body.status).to.equal(404);
+          expect(response.body).to.have.property('data');
+          expect(response.body.data).to.equal("Sorry, question data cannot be empty");
+        });
+    });
   });
   describe("Rsvp a  meetup  ", function (done) {
     it('Should RSVP a meetup if it exist and return an array of keys and values', function () {
@@ -260,7 +309,9 @@ describe("Questioner App", function () {
             "meetup": 1,
             "title": "How to create data structures",
             "body": "How can i do this and that from time to time in the mix",
-            "votes": 10
+            "votes": 10,
+            "upVotes":2,
+            "downVote":0
           },
           {
             "id": 2,
@@ -269,7 +320,9 @@ describe("Questioner App", function () {
             "meetup": 2,
             "title": "How to create data structures",
             "body": "How can i do this and that from time to time in the mix",
-            "votes": 10
+            "votes": 10,
+            "upVotes":2,
+            "downVote":0
           }
         ]
       };
@@ -290,6 +343,21 @@ describe("Questioner App", function () {
           expect(response.body.data[0].votes).to.equal(9);
           expect(response.body.data[0]).to.have.property('meetup');
           expect(response.body.data[0].meetup).to.equal(2);
+        });
+    });
+    it('it should throw a 404 error when a wrong meetup question Id is supplied for vote', function () {
+      let def = this.def;
+      request(app)
+        .patch("/api/v1/questions/12/down-vote")
+        .set('Accept', 'application/x-www-form-urlencoded')
+        .expect('Content-type', /json/)
+        .expect(404)
+        .end(function (error, response) {
+          // console.log(response.body);
+          expect(response.body).to.have.property('status');
+          expect(response.body.status).to.equal(404);
+          expect(response.body).to.have.property('data');
+          expect(response.body.data).to.equal("invalid question Id supplied");
         });
     });
   });
@@ -336,5 +404,21 @@ describe("Questioner App", function () {
           expect(response.body.data[0].meetup).to.equal(1);
         });
     });
+    it('it should throw a 404 error when a wrong meetup question Id is supplied for vote', function () {
+      let def = this.def;
+      request(app)
+        .patch("/api/v1/questions/12/down-vote")
+        .set('Accept', 'application/x-www-form-urlencoded')
+        .expect('Content-type', /json/)
+        .expect(404)
+        .end(function (error, response) {
+          // console.log(response.body);
+          expect(response.body).to.have.property('status');
+          expect(response.body.status).to.equal(404);
+          expect(response.body).to.have.property('data');
+          expect(response.body.data).to.equal("invalid question Id supplied");
+        });
+    });
   });
 });
+after(() => server.close());

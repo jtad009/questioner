@@ -4,12 +4,13 @@
 
     <head>
         <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Roboto:300,400,500" rel="stylesheet">
         <title>Admin - Questioner</title>
     </head>
 
     <body>
         <div class="sidebar">
-            <img src="../images/bp-logo-home.png" width="180px" class="logo" />
+                <p class="logo" >QUESTIONER ?</p>
             <div> <img src="../images/avatar.jpg" class="user_passport" /></div>
             <div class="navigation">
                 <a href="../profile/index.html">View Profile</a>
@@ -24,13 +25,13 @@
             <div class="item3">
                 <!-- post a question -->
                 <div class="question_box mb-2">
-                    <div style="">
+                    <div >
                         <form name="entry" method="post" action="">
-                            <div style="">
-                                <div style="">
+                            <div >
+                                <div >
 
                                     <div class="drbox" style="background:#FFF" align="center">
-                                        <div style="" align="left" id="catHolder">
+                                        <div  align="left" id="catHolder">
                                             <textarea name="entrybTB" id="entrybTB" class="opinion_box_2" cols="50"
                                                 rows="3" placeholder="Create a meetup..." class="txbx"></textarea>
                                             <input type="text" name="tags" placeholder="Enter tags seperated by commas"
@@ -65,7 +66,9 @@
                             </div>
                         </div>
                         <div class="feed_body">
-                            <img src="../images/54620ef4a1a3e.JPG" width="70%" class="postimg2" align="right">
+                            <img src="../images/bg123.jpg" width="100%" class="postimg2" align="center">
+                            <br/>
+                                <br/>
                             <span class="category_title"><strong>Events</strong>-</span>
                             This is the most amazing bit of concept that has ever gone out to the world and i like
                             every bit of it till date. So tell me who amazes you the most in all things scared.
@@ -88,6 +91,42 @@
                             </div>
                         </div>
                     </div>
+                    <div class="feed">
+                            <div class="feed_head">
+                                <img src="../images/avatar.jpg" width="50" height="50" class="feed_photo" />
+                                <div style="float:left;margin-left:12px" align="left">
+                                    <p class="pstname" data-src="3">
+                                        <a href="#" class="username">Imo Douglas</a>
+                                    </p>
+                                    <p class="feed_timestamp">Sun . 10:40 PM . 14/12/14</p>
+                                </div>
+                            </div>
+                            <div class="feed_body">
+                                <img src="../images/gplus-header.png" width="100%" class="postimg2" align="center">
+                                <br/>
+                                <br/>
+                                <span class="category_title"><strong>Events</strong>-</span>
+                                This is the most amazing bit of concept that has ever gone out to the world and i like
+                                every bit of it till date. So tell me who amazes you the most in all things scared.
+                            </div>
+                            <div class="feed_footer">
+                                <div align="center">
+                                    <span class="meetup_activity_span">
+                                        <span class="activity_count">4</span>
+                                        <a href="#" id="view_questions">
+                                            <ion-icon src="../images/eye.svg" style="color:black; font-size:20px"></ion-icon>
+                                            &nbsp;&nbsp;
+                                            <a href="#" id="rsvp">
+                                                <ion-icon src="../images/notifications-outline.svg" style="color:black; font-size:20px"></ion-icon>
+                                                &nbsp;&nbsp;
+                                                <a href="#" id="delete">
+                                                    <ion-icon src="../images/trash.svg" style="color:red; font-size:20px"></ion-icon>
+                                                </a> &nbsp;&nbsp;
+                                    </span>
+    
+                                </div>
+                            </div>
+                        </div>
                 </div>
                 <!-- end meetup event -->
 
@@ -112,4 +151,3 @@
     </body>
 
 </html>
-

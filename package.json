@@ -5,7 +5,10 @@
   "main": "app.js",
   "scripts": {
     "test": "mocha --require babel-register ./test/**/*-spec.js",
-    "start": "nodemon server.js --exec babel-node --presets babel-preset-env"
+    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha -- --require babel-register ./test/**/*-spec.js",
+    
+    "start": "nodemon server.js --exec babel-node --presets babel-preset-env",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "engines": {
     "node": "10.13.0"
@@ -50,7 +53,10 @@
     "babel-preset-stage-3": "^6.24.1",
     "babel-register": "^6.26.0",
     "chai": "^4.2.0",
+    "coveralls": "^3.0.2",
+    "istanbul": "^1.1.0-alpha.1",
     "mocha": "^5.2.0",
+    "mocha-lcov-reporter": "^1.3.0",
     "nodemon": "^1.18.9",
     "rewire": "^4.0.1",
     "supertest": "^3.3.0"
