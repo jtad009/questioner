@@ -1,250 +1,275 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/suggestion_tooltip.css">
-    
-  </head>
+
+</head>
 <div class="sidebar">
-    <img src="images/bp-logo-home.png"    width="180px" class="logo" />
-    <div> <img src="images/avatar.jpg" class="user_passport"  /></div>
+    <img src="images/bp-logo-home.png" width="180px" class="logo" />
+    <div> <img src="images/avatar.jpg" class="user_passport" /></div>
     <div class="navigation">
-       <a href="profile/index.html">View Profile</a>
+        <a href="profile/index.html">View Profile</a>
         <a href="admin/index.html">Admin Page</a>
-<<<<<<< HEAD
-      <a href="dashboard.html">Meetup Listing</a> 
-=======
-      <a href="dashboard.html" class="active">Meetup Listing</a>
->>>>>>> ft-admin-UI-page-162799080
-      <a href="#">Logout</a> 
-      <br/>
-      
+        <a href="dashboard.html" class="active">Meetup Listing</a>
+        <a href="#">Logout</a>
+        <br />
+
     </div>
-  </div>
-        
- <div class="wrapper">
-    
-  
-  <div class="item3">
-    
-    <!-- meetup event -->
-    <div class="feed meetup-post">
-                  <div class="feed_head">
-                      <img src="images/avatar.jpg" width="50" height="50" class="feed_photo" />
-                      <div style="float:left" align="left">
-                          <span class="pstname" data-src="3">
-                              <a href="#"   class="username" >Imo Douglas</a><br>
-                          </span>
-                          <span class="feed_timestamp">Sun . 10:40 PM . 14/12/14</span>
-                      </div>
-                  </div>
-                  <div class="feed_body">
-                    <img src="images/54620ef4a1a3e.JPG" width="70%" class="postimg2" align="right">
-                    <span class="category_title"><strong>Events</strong>-</span>
-                    This is the most amazing bit of concept that has ever gone out to the world and i like every bit of it till date. So tell me who amazes you the most in all things scared.
+</div>
 
-                    <div class="_1sk6" style="bottom: 0px;">
-                      TAGS:
-                          <div class="_54_v">
-                              <div class="clearfix">
-                                  
-                                  <div class="_54_w _42ef">
-                                      <div class="clearfix uiTokenizer uiInlineTokenizer">
-                                          <div class="tokenarea" id="tokenarea">
-                                             
-                                                                 <span class="removable uiToken"><span class="uiTokenText">Events</span><input name="tags[]" id="feature" autocomplete="off" type="hidden" value="Events"></span>
-                                                                 <span class="removable uiToken"><span class="uiTokenText">Meetps</span><input name="tags[]" id="feature" autocomplete="off" type="hidden" value="Meetsups"></span>
-                                                                 <span class="removable uiToken"><span class="uiTokenText">Andela</span><input name="tags[]" id="feature" autocomplete="off" type="hidden" value="Andela"></span>
-                                                                 <span class="removable uiToken"><span class="uiTokenText">Hackaton</span><input name="tags[]" id="feature" autocomplete="off" type="hidden" value="Hackaton"></span>
-                                                                 <span class="removable uiToken"><span class="uiTokenText">Hackaton</span><input name="tags[]" id="feature" autocomplete="off" type="hidden" value="Hackaton"></span>
-                                                                 <span class="removable uiToken"><span class="uiTokenText">Hackaton</span><input name="tags[]" id="feature" autocomplete="off" type="hidden" value="Hackaton"></span>
-                                                               </div>
-                                          <div class="uiTypeahead" id="js_8">
-                                              <div class="wrap">
-                                                  <input type="hidden" autocomplete="off" class="hiddenInput" value="">
-                                                  <div class="innerWrap">
-                                                      <input type="text" class="inputtext textInput" id="inputtext" aria-label="" placeholder="" data-placeholder="" aria-expanded="false" aria-labelledby="u_0_ak" tabindex="0" style="width: 20px;border:none;outline:none;">
-                                                      <div class="uiContextualLayerPositioner uiLayer hidden_elem" data-ownerid="js_e" style="width: 454px; left: 26px;">
-                                                          <div class="uiContextualLayer uiContextualLayerBelowLeft">
-                                                              <div style="width: 34px;">
-                                                                  <div class="uiTypeaheadView uiContextualTypeaheadView uiInlineTokenizerView hidden_elem">
-                                                                      <ul class="compact" id="typeahead_list_js_e" role="listbox">
+<div class="wrapper">
 
-                                                                      </ul>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="feed_footer">
-                      <div align="center">
-                        <span class="meetup_activity_span">
-                            <span class="activity_count">4</span>
-                            <a href="#"  id="view_questions" ><img src="images/visible.png" height="14" title="Questions"></a> &nbsp;&nbsp;
-                            <a href="#"  id="rsvp" ><img src="images/bell.gif" height="13" title="Rsvp"></a> &nbsp;&nbsp;
-                        </span> 
-                            
-                      </div>
-                  </div>
-        </div>
-      <!-- end meetup event -->
-      <!-- post a question -->
-    <div  class="question_box">
-      <div style="">
-          <form name="entry" method="post" action="">
-            <div style="">
-              <div style="">
-                <div class="drbox" style="background:#FFF" align="center">
-                    <div style="" align="left" id="catHolder">
-                       <textarea name="entrybTB" id="entrybTB" class="opinion_box_2" cols="50" rows="3" placeholder="Post a question?" class="txbx"></textarea>
-                      </div>  
-                      <div  id="buttonHolder" align="right">
-                          <input type="button" height="15" name="Save" value="Post" class="tbutn" id="post_msg" title="Save to diary">
 
-                      </div>
+    <div class="item3">
+
+        <!-- meetup event -->
+        <div class="feed meetup-post">
+            <div class="feed_head">
+                <img src="images/avatar.jpg" width="50" height="50" class="feed_photo" />
+                <div style="float:left" align="left">
+                    <span class="pstname" data-src="3">
+                        <a href="#" class="username">Imo Douglas</a><br>
+                    </span>
+                    <span class="feed_timestamp">Sun . 10:40 PM . 14/12/14</span>
                 </div>
-            
-            
-              </div>
-            </div>   
-          </form>
-      </div>
-    </div>
-     <!-- end post a question      -->
-     <!-- meetup question and answers -->
-        <div class="feeds">
-              <h4 class="title">Meetup Questions</h4>
-              <div class="feed">
-                  <div class="feed_head">
-                    <img src="images/avatar.jpg" width="50" height="50" class="feed_photo" />
-                   
-                    <div style="margin-left:12px;float:left" align="left">
-                     <p class="pstname" data-src="3">
-                        <a href="#" id="trigger"  class="username" style="z-index: 0;">Imo Douglas</a>
-                      </p>
-                      <p class="feed_timestamp">Sun . 10:40 PM . 14/12/14</p>
-                    </div>
-                  </div>
-                  <div class="feed_body">
-                    <span class="category_title"><strong>Events</strong>-</span>
-                    This is the most amazing bit of concept that has ever gone out to the world and i like every bit of it till date. So tell me who amazes you the most in all things scared.
-                  </div>
-                  <div class="feed_footer">
-                      <div align="center">
-                          <span class="meetup_activity_span" style="font-size:10px; color:#000">
-                              <span id="countTrue">4</span>
-                              <a href="#"  id="likeButton" data-src="21" title="upvote"><ion-icon src="images/thumbs-up.svg" style="color:black; font-size:20px"></ion-icon></a> &nbsp;&nbsp;
-                              <span id="countTrue">4</span>
-                              <a href="#"  id="dislikeButton" data-src="21" title="downvote"><ion-icon src="images/thumbs-down.svg" style="color:black; font-size:20px"></ion-icon></a> &nbsp;&nbsp;
-                              <span id="countOpinion">7</span> 
-                              <a href="#"  id="showOpinion" onclick="showOpinion();return false;" title="show comments"><ion-icon src="images/megaphone.svg" style="color:black; font-size:20px"></ion-icon></a>
-                          </span> 
-                              
-                      </div>
-                  </div>
-                
-                  <div id="opinion_div20" class="opinion_div" style="clear: both; display: block;">
-                      <!-- <h4> Opinions</h4> -->
-                      <div style="float:left;"> 
-                          <img src="images/opinion-icon-gray.png" height="15"> 
-                          <div style="float:right">
-                              <a href="#" id="close_this_thread" style="font-size:9px" title="Close" data-src="20">x</a>
-                          </div>
-                          <div class="clear"></div>
-                            <ul class="opinions_list" style="" data-src="20" id="opinion_ul_20">
-                                 <li style="padding:5px; " data-src="15">
-                                    <div align="left">
-                                       <span class="pstname" data-src="3">
-                                          <div class="hc-preview">
-                                            <a href="#" id="trigger" class="username" data-src="3">Imo Douglas</a>
-                                           
-                                          </div>
-                                        </span>
-                                        
-                                        <span style="font-size:11px; color:#CCCCCC">Sat . 10:28 AM . 15/12/18</span>
-                                    </div>
-                                    <div class="feed_body">
-                                    I think the answer to this qustion is to try new thingsI think the answer to this qustion is to try new thingsI think the answer to this qustion is to try new thingsI think the answer to this Questionsstion is to try new things
-                                    </div><br>
-                                    <p style="font-size:9px; color:#CCC;margin-bottom:0">
-                                      <a href="#" id="delete_opinion" title="Delete Opinion" class="lowlink" onclick="return false;">Delete
-                                      </a>
-                                    </p>
-                      
-                                 </li>
-                            </ul>
-                            <div>
-                              <img src="images/spin.gif" height="20" id="spin" style="display:block;position:relative;z-index:999999;margin-left:46%;margin-top: 2%;">
-                              <textarea cols="30" rows="" maxlength="140" onkeypress="" style="" id="opinion_box20" class="opinion_box" placeholder="state you opinion. press enter when done"  cat="*"></textarea>
-                            </div>
-                      </div>
-                  </div>
-                
-         
-        
-              </div>
-              <div class="feed">
-                  <div class="feed_head">
-                    <img src="images/avatar.jpg" width="50" height="50" class="feed_photo" />
-                   
-                    <div style="float:left;margin-left:12px" align="left">
-                     <p class="pstname" data-src="3">
-                        <a href="#" id="trigger"  class="username" style="z-index: 0;">Imo Douglas</a>
-                      </p>
-                      <p class="feed_timestamp">Sun . 10:40 PM . 14/12/14</p>
-                    </div>
-                  </div>
-                  <div class="feed_body">
-                    <span style="color:#087B6C; font-size:11px"><strong>Events</strong>-</span>
-                    This is the most amazing bit of concept that has ever gone out to the world and i like every bit of it till date. So tell me who amazes you the most in all things scared.
-                  </div>
-                  <div class="feed_footer">
-                      <div align="center">
-                          <span class="meetup_activity_span" style="font-size:10px; color:#000">
-                              <span id="countTrue">4</span>
-                              <a href="#"  id="likeButton" data-src="21" title="upvote"><ion-icon src="images/thumbs-up.svg" style="color:black; font-size:20px"></ion-icon></a> &nbsp;&nbsp;
-                              <span id="countTrue">4</span>
-                              <a href="#"  id="dislikeButton" data-src="21" title="downvote"><ion-icon src="images/thumbs-down.svg" style="color:black; font-size:20px"></ion-icon></a> &nbsp;&nbsp;
-                              <span id="countOpinion">7</span>
-                              <a href="#"  id="showOpinion" onclick="showOpinion();return false;" title="show comments"><ion-icon src="images/megaphone.svg" style="color:black; font-size:20px"></ion-icon></a>
-                          </span>
+            </div>
+            <div class="feed_body">
+                <img src="images/54620ef4a1a3e.JPG" width="70%" class="postimg2" align="right">
+                <span class="category_title"><strong>Events</strong>-</span>
+                This is the most amazing bit of concept that has ever gone out to the world and i like every bit of it
+                till date. So tell me who amazes you the most in all things scared.
 
-                      </div>
-                  </div>
-                
-              
-                  
-         
-        
-              </div>
-          </div>
-    <!--end meetup questions and answers  -->
-        </div>  
-  
-  <!-- <div class="footer">Footer</div> -->
-  </div>
-  <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
-  <script>
+                <div class="_1sk6" style="bottom: 0px;">
+                    TAGS:
+                    <div class="_54_v">
+                        <div class="clearfix">
+
+                            <div class="_54_w _42ef">
+                                <div class="clearfix uiTokenizer uiInlineTokenizer">
+                                    <div class="tokenarea" id="tokenarea">
+
+                                        <span class="removable uiToken"><span class="uiTokenText">Events</span><input
+                                                name="tags[]" id="feature" autocomplete="off" type="hidden" value="Events"></span>
+                                        <span class="removable uiToken"><span class="uiTokenText">Meetps</span><input
+                                                name="tags[]" id="feature" autocomplete="off" type="hidden" value="Meetsups"></span>
+                                        <span class="removable uiToken"><span class="uiTokenText">Andela</span><input
+                                                name="tags[]" id="feature" autocomplete="off" type="hidden" value="Andela"></span>
+                                        <span class="removable uiToken"><span class="uiTokenText">Hackaton</span><input
+                                                name="tags[]" id="feature" autocomplete="off" type="hidden" value="Hackaton"></span>
+                                        <span class="removable uiToken"><span class="uiTokenText">Hackaton</span><input
+                                                name="tags[]" id="feature" autocomplete="off" type="hidden" value="Hackaton"></span>
+                                        <span class="removable uiToken"><span class="uiTokenText">Hackaton</span><input
+                                                name="tags[]" id="feature" autocomplete="off" type="hidden" value="Hackaton"></span>
+                                    </div>
+                                    <div class="uiTypeahead" id="js_8">
+                                        <div class="wrap">
+                                            <input type="hidden" autocomplete="off" class="hiddenInput" value="">
+                                            <div class="innerWrap">
+                                                <input type="text" class="inputtext textInput" id="inputtext"
+                                                    aria-label="" placeholder="" data-placeholder="" aria-expanded="false"
+                                                    aria-labelledby="u_0_ak" tabindex="0" style="width: 20px;border:none;outline:none;">
+                                                <div class="uiContextualLayerPositioner uiLayer hidden_elem"
+                                                    data-ownerid="js_e" style="width: 454px; left: 26px;">
+                                                    <div class="uiContextualLayer uiContextualLayerBelowLeft">
+                                                        <div style="width: 34px;">
+                                                            <div class="uiTypeaheadView uiContextualTypeaheadView uiInlineTokenizerView hidden_elem">
+                                                                <ul class="compact" id="typeahead_list_js_e" role="listbox">
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feed_footer">
+                <div align="center">
+                    <span class="meetup_activity_span">
+                        <span class="activity_count">4</span>
+                        <a href="#" id="view_questions"><img src="images/visible.png" height="14" title="Questions"></a>
+                        &nbsp;&nbsp;
+                        <a href="#" id="rsvp"><img src="images/bell.gif" height="13" title="Rsvp"></a> &nbsp;&nbsp;
+                    </span>
+
+                </div>
+            </div>
+        </div>
+        <!-- end meetup event -->
+        <!-- post a question -->
+        <div class="question_box">
+            <div style="">
+                <form name="entry" method="post" action="">
+                    <div style="">
+                        <div style="">
+                            <div class="drbox" style="background:#FFF" align="center">
+                                <div style="" align="left" id="catHolder">
+                                    <textarea name="entrybTB" id="entrybTB" class="opinion_box_2" cols="50" rows="3"
+                                        placeholder="Post a question?" class="txbx"></textarea>
+                                </div>
+                                <div id="buttonHolder" align="right">
+                                    <input type="button" height="15" name="Save" value="Post" class="tbutn" id="post_msg"
+                                        title="Save to diary">
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- end post a question      -->
+        <!-- meetup question and answers -->
+        <div class="feeds">
+            <h4 class="title">Meetup Questions</h4>
+            <div class="feed">
+                <div class="feed_head">
+                    <img src="images/avatar.jpg" width="50" height="50" class="feed_photo" />
+
+                    <div style="margin-left:12px;float:left" align="left">
+                        <p class="pstname" data-src="3">
+                            <a href="#" id="trigger" class="username" style="z-index: 0;">Imo Douglas</a>
+                        </p>
+                        <p class="feed_timestamp">Sun . 10:40 PM . 14/12/14</p>
+                    </div>
+                </div>
+                <div class="feed_body">
+                    <span class="category_title"><strong>Events</strong>-</span>
+                    This is the most amazing bit of concept that has ever gone out to the world and i like every bit of
+                    it till date. So tell me who amazes you the most in all things scared.
+                </div>
+                <div class="feed_footer">
+                    <div align="center">
+                        <span class="meetup_activity_span" style="font-size:10px; color:#000">
+                            <span id="countTrue">4</span>
+                            <a href="#" id="likeButton" data-src="21" title="upvote">
+                                <ion-icon src="images/thumbs-up.svg" style="color:black; font-size:20px"></ion-icon>
+                            </a> &nbsp;&nbsp;
+                            <span id="countTrue">4</span>
+                            <a href="#" id="dislikeButton" data-src="21" title="downvote">
+                                <ion-icon src="images/thumbs-down.svg" style="color:black; font-size:20px"></ion-icon>
+                            </a> &nbsp;&nbsp;
+                            <span id="countOpinion">7</span>
+                            <a href="#" id="showOpinion" onclick="showOpinion();return false;" title="show comments">
+                                <ion-icon src="images/megaphone.svg" style="color:black; font-size:20px"></ion-icon>
+                            </a>
+                        </span>
+
+                    </div>
+                </div>
+
+                <div id="opinion_div20" class="opinion_div" style="clear: both; display: block;">
+                    <!-- <h4> Opinions</h4> -->
+                    <div style="float:left;">
+                        <img src="images/opinion-icon-gray.png" height="15">
+                        <div style="float:right">
+                            <a href="#" id="close_this_thread" style="font-size:9px" title="Close" data-src="20">x</a>
+                        </div>
+                        <div class="clear"></div>
+                        <ul class="opinions_list" style="" data-src="20" id="opinion_ul_20">
+                            <li style="padding:5px; " data-src="15">
+                                <div align="left">
+                                    <span class="pstname" data-src="3">
+                                        <div class="hc-preview">
+                                            <a href="#" id="trigger" class="username" data-src="3">Imo Douglas</a>
+
+                                        </div>
+                                    </span>
+
+                                    <span style="font-size:11px; color:#CCCCCC">Sat . 10:28 AM . 15/12/18</span>
+                                </div>
+                                <div class="feed_body">
+                                    I think the answer to this qustion is to try new thingsI think the answer to this
+                                    qustion is to try new thingsI think the answer to this qustion is to try new
+                                    thingsI think the answer to this Questionsstion is to try new things
+                                </div><br>
+                                <p style="font-size:9px; color:#CCC;margin-bottom:0">
+                                    <a href="#" id="delete_opinion" title="Delete Opinion" class="lowlink" onclick="return false;">Delete
+                                    </a>
+                                </p>
+
+                            </li>
+                        </ul>
+                        <div>
+                            <img src="images/spin.gif" height="20" id="spin" style="display:block;position:relative;z-index:999999;margin-left:46%;margin-top: 2%;">
+                            <textarea cols="30" rows="" maxlength="140" onkeypress="" style="" id="opinion_box20" class="opinion_box"
+                                placeholder="state you opinion. press enter when done" cat="*"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="feed">
+                <div class="feed_head">
+                    <img src="images/avatar.jpg" width="50" height="50" class="feed_photo" />
+
+                    <div style="float:left;margin-left:12px" align="left">
+                        <p class="pstname" data-src="3">
+                            <a href="#" id="trigger" class="username" style="z-index: 0;">Imo Douglas</a>
+                        </p>
+                        <p class="feed_timestamp">Sun . 10:40 PM . 14/12/14</p>
+                    </div>
+                </div>
+                <div class="feed_body">
+                    <span style="color:#087B6C; font-size:11px"><strong>Events</strong>-</span>
+                    This is the most amazing bit of concept that has ever gone out to the world and i like every bit of
+                    it till date. So tell me who amazes you the most in all things scared.
+                </div>
+                <div class="feed_footer">
+                    <div align="center">
+                        <span class="meetup_activity_span" style="font-size:10px; color:#000">
+                            <span id="countTrue">4</span>
+                            <a href="#" id="likeButton" data-src="21" title="upvote">
+                                <ion-icon src="images/thumbs-up.svg" style="color:black; font-size:20px"></ion-icon>
+                            </a> &nbsp;&nbsp;
+                            <span id="countTrue">4</span>
+                            <a href="#" id="dislikeButton" data-src="21" title="downvote">
+                                <ion-icon src="images/thumbs-down.svg" style="color:black; font-size:20px"></ion-icon>
+                            </a> &nbsp;&nbsp;
+                            <span id="countOpinion">7</span>
+                            <a href="#" id="showOpinion" onclick="showOpinion();return false;" title="show comments">
+                                <ion-icon src="images/megaphone.svg" style="color:black; font-size:20px"></ion-icon>
+                            </a>
+                        </span>
+
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+        <!--end meetup questions and answers  -->
+    </div>
+
+    <!-- <div class="footer">Footer</div> -->
+</div>
+<script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
+<script>
     console.log();
-     function showOpinion(){
-         if(document.getElementById('opinion_div20').style.display == "none"){
+    function showOpinion() {
+        if (document.getElementById('opinion_div20').style.display == "none") {
 
             document.getElementById('opinion_div20').style.display = 'block';
-         }else{
+        } else {
             document.getElementById('opinion_div20').style.display = 'none';
-         }
         }
-       
-  </script>
-</html>
-  <!-- Wrapper Ends -->
+    }
 
-  
+</script>
+
+</html>
