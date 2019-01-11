@@ -404,7 +404,7 @@ a{
   padding: 10px;
   border-radius: 4px 4px 0px 0px
 }
-input[type="text"],input[type="password"] {
+.profile_card>input[type="text"],.profile_card>input[type="password"] {
   padding:12px;
   border:none;
   border:1px solid #ccc;
@@ -442,11 +442,7 @@ input[type="text"],input[type="password"] {
   cursor:hand;
   color:black
 }
-input[type="text"],input[type="password"] {
-  padding:12px;
-  border:none;
-  border:1px solid #ccc;
-}
+
 .tablink:hover{
   background-color: #ececec;
   color:#000;
