@@ -1,7 +1,7 @@
 /*login*/
 
 h1 {
-  
+
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   padding: 10px;
@@ -10,85 +10,141 @@ h1 {
   text-align: center
 }
 .logo{
-    margin: ;
+  margin: ;
 }
 
 
- h1,
-    .login {
-      grid-column-end: span 2;
-      width: auto;
-    }
-    .login > div {
-      display: grid;
-      /*grid-template-columns: 1fr 2fr;*/
-      align-items: center;
-    }
-    .login > div.actions {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-    .account {
-      border-right: 1px dotted rgb(191, 216, 227);
-      padding: 0 10px 0 0;
-      align-self: end;
-      width: auto;
-    }
-    input[type="text"],input[type="password"] {
-      padding:12px;
-      border:none;
-      border:1px solid #ccc;
-    }
-    .contact {
-      padding: 0 0 0 10px;
-      width: auto;
-    }
-    input[type="submit"] {
-      grid-column: 2;
-      padding:9px;
-    }
-    .actions a {
-      justify-self: end;
-    }
-    body
+h1,
+.login {
+  grid-column-end: span 2;
+  width: auto;
+  /*border: 1px solid #ccc;*/
+  /*padding:10px;*/
+}
+.login > div {
+  display: grid;
+  /*grid-template-columns: 1fr 2fr;*/
+  align-items: center;
+}
+.login label{
+  font-size:12px;
+  margin-bottom:7px;
+  margin-top:7px
+  /*font-weight:200*/
+}
+.login > div.actions {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.account {
+  border-right: 1px dotted rgb(191, 216, 227);
+  padding: 0 10px 0 0;
+  align-self: end;
+  width: auto;
+}
+input[type="text"],input[type="password"] {
+  padding:12px;
+  border:none;
+  border:1px solid #ccc;
+}
+.contact {
+  padding: 0 0 0 10px;
+  width: auto;
+}
+input[type="submit"] {
+  grid-column: 2;
+  padding:9px;
+}
+.actions a {
+  justify-self: end;
+}
+body
 {
   padding: 30px;
-  background-color: #fcfcfc;  
+  background-color: #fcfcfc;
 }
 .wrapper
 {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
 }
 .inner-div
 {
-     /*background-color: #f3f2ef;*/
-     border-radius: 3px;
-     width: 500px;
-     height: 100px; 
+  /*background-color: #f3f2ef;*/
+  border-radius: 3px;
+  width: 500px;
+  height: 100px;
 }
 .inner-div>h1{
-    background-color:#132437;
+  background-color:#132437;
 }
- .navigation > div >a,a{
-      text-align: right;
-      color:#0CAD99 ;
-      padding:3px;
-      margin-left:12px;
-      text-decoration: none;
-      text-transform: capitalize;
-    }
+
+
+.navigation > div >a,a{
+  text-align: right;
+  color:#0CAD99 ;
+  padding:3px;
+  margin-left:12px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
 h1{
   background: #fcfcfc;
 }
-  input[type="submit"]{
-      background: none;
-      border:1px solid #0CAD99;
-      /*border-radius: 50%;*/
-      height:50px;
-      color:#0CAD99;
-  }
+.signup_button{
+  height:50px;
+  width:500px;
+}
+.signup_button:hover{
+  cursor:hand;
+  background: none;
+  border: 1px solid #0CAD99;
+}
+.login_button{
+  background: none;
+  border:1px solid #0CAD99;
+  border-radius: 10px;
+  height:50px;
+  color:#0CAD99;
+  width:490px;
+}
+.login_button:hover{
+  background-color:#c6fcfc;
+  cursor:hand;
+  color:black
+}
+.forgot_pw_link{
+  font-size:12px;
+  margin-top:-25px;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+.a-divider{
+  text-align: center;
+  position: relative;
+  top: 2px;
+  padding-top: 1px;
+  margin-bottom: 14px;
+  line-height: 0;
+}
+.a-divider:after{
+  content: "";
+  width: 100%;
+  background-color: transparent;
+  display: block;
+  height: 1px;
+  border-top: 1px solid #e7e7e7;
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  z-index: 1;
+}
+.forgot_pw_link:hover{
+  text-decoration:underline;
+}
 .account > p{
   width:100%;
   text-align: center

@@ -1,99 +1,153 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    
-  </head>
-<div class="sidebar">
-    <img src="../images/bp-logo-home.png"    width="180px" class="logo" />
-    <div> <img src="../images/avatar.jpg" class="user_passport"  /></div>
-    <div class="navigation">
-       <a href="../profile/index.html">View Profile</a>
-      <a href="../dashboard.html">Meetup Listing</a>
-      <a href="#">Logout</a> 
-      <br/>
-      
-    </div>
-  </div>
-        
- <div class="wrapper">
-    
-  
-  <div class="item3">
-     <!-- post a question -->
-    <div  class="question_box mb-2">
-      <div style="">
-          <form name="entry" method="post" action="">
-            <div style="">
-              <div style="">
-                
-                <div class="drbox" style="background:#FFF" align="center">
-                    <div style="" align="left" id="catHolder">
-                       <textarea name="entrybTB" id="entrybTB" class="opinion_box_2" cols="50" rows="3" placeholder="Post a question?" class="txbx"></textarea>
-                       <input type="text" name="tags" placeholder="Enter tags seperated by commas" class="tag-input" />
-                      </div>  
-                      <div  id="buttonHolder" align="right">
-                        <input type="image" src="../images/camera-icon-height-50px.png" height="15" name="camera" title="add images"> &nbsp;
-                          <input type="button" height="15" name="Save" value="Save" class="tbutn" id="post_msg" title="Save to diary">
-                          <input type="button" height="15" name="Share" value="Share" class="tbutn" title="Share on diarypage">
-                      </div>
-                </div>
-            
-            
-              </div>
-            </div>   
-          </form>
-      </div>
-    </div>
-     <!-- end post a question      -->
-    <!-- meetup event -->
-    <div class="feeds">
-        <div class="feed">
-                  <div class="feed_head">
-                      <img src="../images/avatar.jpg" width="50" height="50" class="feed_photo" />
-                      <div style="float:left" align="left">
-                          <span class="pstname" data-src="3">
-                              <a href="#"   class="username" >Imo Douglas</a><br>
-                          </span>
-                          <span class="feed_timestamp">Sun . 10:40 PM . 14/12/14</span>
-                      </div>
-                  </div>
-                  <div class="feed_body">
-                    <img src="../images/54620ef4a1a3e.JPG" width="70%" class="postimg2" align="right">
-                    <span class="category_title"><strong>Events</strong>-</span>
-                    This is the most amazing bit of concept that has ever gone out to the world and i like every bit of it till date. So tell me who amazes you the most in all things scared.
-                  </div>
-                  <div class="feed_footer">
-                      <div align="center">
-                        <span class="meetup_activity_span">
-                            <span class="activity_count">4</span>
-                            <a href="#"  id="view_questions" ><img src="../images/visible.png" height="14" title="Questions"></a> &nbsp;&nbsp;
-                            <a href="#"  id="rsvp" ><img src="../images/bell.gif" height="13" title="Rsvp"></a> &nbsp;&nbsp;
-                            <a href="#"  id="delete" ><img src="../images/garbage.png" height="13" title="Delete"></a></a> &nbsp;&nbsp;
-                        </span> 
-                            
-                      </div>
-                  </div>
-        </div>
-      </div>
-      <!-- end meetup event -->
-     
-    
-        </div>  
-  
-  <div class="footer">Footer</div>
-  </div>
-  <script>
-    console.log();
-     function showOpinion(){
-         if(document.getElementById('opinion_div20').style.display == "none"){
 
-            document.getElementById('opinion_div20').style.display = 'block';
-         }else{
-            document.getElementById('opinion_div20').style.display = 'none';
-         }
-        }
-       
-  </script>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Roboto:300,400,500" rel="stylesheet">
+        <title>Admin - Questioner</title>
+    </head>
+
+    <body>
+        <div class="sidebar">
+                <p class="logo" >QUESTIONER ?</p>
+            <div> <img src="../images/avatar.jpg" class="user_passport" /></div>
+            <div class="navigation">
+                <a href="../profile/index.html">View Profile</a>
+                <a href="../dashboard.html">Meetup Listing</a>
+                <a href="#">Logout</a>
+                <br />
+
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="item3">
+                <!-- post a question -->
+                <div class="question_box mb-2">
+                    <div >
+                        <form name="entry" method="post" action="">
+                            <div >
+                                <div >
+
+                                    <div class="drbox" style="background:#FFF" align="center">
+                                        <div  align="left" id="catHolder">
+                                            <textarea name="entrybTB" id="entrybTB" class="opinion_box_2" cols="50"
+                                                rows="3" placeholder="Create a meetup..." class="txbx"></textarea>
+                                            <input type="text" name="tags" placeholder="Enter tags seperated by commas"
+                                                class="tag-input" />
+                                        </div>
+                                        <div id="buttonHolder" align="right">
+                                            <input type="image" src="../images/camera-icon-height-50px.png" height="15"
+                                                name="camera" title="add images"> &nbsp;
+                                            <input type="button" height="15" name="Save" value="Publish" class="tbutn"
+                                                id="post_msg" title="Save to diary">
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- end post a question      -->
+                <!-- meetup event -->
+                <div class="feeds">
+                    <div class="feed">
+                        <div class="feed_head">
+                            <img src="../images/avatar.jpg" width="50" height="50" class="feed_photo" />
+                            <div style="float:left;margin-left:12px" align="left">
+                                <p class="pstname" data-src="3">
+                                    <a href="#" class="username">Imo Douglas</a>
+                                </p>
+                                <p class="feed_timestamp">Sun . 10:40 PM . 14/12/14</p>
+                            </div>
+                        </div>
+                        <div class="feed_body">
+                            <img src="../images/bg123.jpg" width="100%" class="postimg2" align="center">
+                            <br/>
+                                <br/>
+                            <span class="category_title"><strong>Events</strong>-</span>
+                            This is the most amazing bit of concept that has ever gone out to the world and i like
+                            every bit of it till date. So tell me who amazes you the most in all things scared.
+                        </div>
+                        <div class="feed_footer">
+                            <div align="center">
+                                <span class="meetup_activity_span">
+                                    <span class="activity_count">4</span>
+                                    <a href="#" id="view_questions">
+                                        <ion-icon src="../images/eye.svg" style="color:black; font-size:20px"></ion-icon>
+                                        &nbsp;&nbsp;
+                                        <a href="#" id="rsvp">
+                                            <ion-icon src="../images/notifications-outline.svg" style="color:black; font-size:20px"></ion-icon>
+                                            &nbsp;&nbsp;
+                                            <a href="#" id="delete">
+                                                <ion-icon src="../images/trash.svg" style="color:red; font-size:20px"></ion-icon>
+                                            </a> &nbsp;&nbsp;
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed">
+                            <div class="feed_head">
+                                <img src="../images/avatar.jpg" width="50" height="50" class="feed_photo" />
+                                <div style="float:left;margin-left:12px" align="left">
+                                    <p class="pstname" data-src="3">
+                                        <a href="#" class="username">Imo Douglas</a>
+                                    </p>
+                                    <p class="feed_timestamp">Sun . 10:40 PM . 14/12/14</p>
+                                </div>
+                            </div>
+                            <div class="feed_body">
+                                <img src="../images/gplus-header.png" width="100%" class="postimg2" align="center">
+                                <br/>
+                                <br/>
+                                <span class="category_title"><strong>Events</strong>-</span>
+                                This is the most amazing bit of concept that has ever gone out to the world and i like
+                                every bit of it till date. So tell me who amazes you the most in all things scared.
+                            </div>
+                            <div class="feed_footer">
+                                <div align="center">
+                                    <span class="meetup_activity_span">
+                                        <span class="activity_count">4</span>
+                                        <a href="#" id="view_questions">
+                                            <ion-icon src="../images/eye.svg" style="color:black; font-size:20px"></ion-icon>
+                                            &nbsp;&nbsp;
+                                            <a href="#" id="rsvp">
+                                                <ion-icon src="../images/notifications-outline.svg" style="color:black; font-size:20px"></ion-icon>
+                                                &nbsp;&nbsp;
+                                                <a href="#" id="delete">
+                                                    <ion-icon src="../images/trash.svg" style="color:red; font-size:20px"></ion-icon>
+                                                </a> &nbsp;&nbsp;
+                                    </span>
+    
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!-- end meetup event -->
+
+
+            </div>
+
+            <div class="footer">Footer</div>
+        </div>
+        <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
+        <script>
+            console.log();
+            function showOpinion() {
+                if (document.getElementById('opinion_div20').style.display == "none") {
+
+                    document.getElementById('opinion_div20').style.display = 'block';
+                } else {
+                    document.getElementById('opinion_div20').style.display = 'none';
+                }
+            }
+
+        </script>
+    </body>
+
 </html>
-  <!-- Wrapper Ends -->
