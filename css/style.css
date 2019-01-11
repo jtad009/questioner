@@ -227,6 +227,12 @@ a{
   border-bottom: thin solid #f6f6f6;
 
 }
+.username,.title{
+  font-family: 'Roboto', sans-serif;
+  color:#0CAD99;
+  font-size: 14px;
+  /* font-weight: bold */
+}
 .username{
   font-family: 'Roboto', sans-serif;
   color:#0CAD99;
@@ -397,6 +403,49 @@ a{
   width:25%;
   padding: 10px;
   border-radius: 4px 4px 0px 0px
+}
+input[type="text"],input[type="password"] {
+  padding:12px;
+  border:none;
+  border:1px solid #ccc;
+}
+.login_button{
+  background: none;
+  border:1px solid #0CAD99;
+  border-radius: 10px;
+  height:50px;
+  color:#0CAD99;
+  width:490px;
+}
+.login {
+  grid-column-end: span 2;
+  width: auto;
+  /*border: 1px solid #ccc;*/
+  /*padding:10px;*/
+}
+.login > div {
+  display: grid;
+  /*grid-template-columns: 1fr 2fr;*/
+  align-items: center;
+}
+.login label{
+  font-size:12px;
+  margin-bottom:7px;
+  margin-top:7px
+  /*font-weight:200*/
+}
+.login > div.actions {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.login_button:hover{
+  background-color:#c6fcfc;
+  cursor:hand;
+  color:black
+}
+input[type="text"],input[type="password"] {
+  padding:12px;
+  border:none;
+  border:1px solid #ccc;
 }
 .tablink:hover{
   background-color: #ececec;
