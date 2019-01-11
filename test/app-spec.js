@@ -166,8 +166,7 @@ describe("Questioner App", function () {
             "title": "How to create data structures",
             "body": "How can i do this and that from time to time in the mix",
             "votes": 10,
-            "upVotes":2,
-            "downVotes":1
+            
           },
           {
             "id": 2,
@@ -177,8 +176,7 @@ describe("Questioner App", function () {
             "title": "How to create data structures",
             "body": "How can i do this and that from time to time in the mix",
             "votes": 10,
-            "upVotes":2,
-            "downVotes":1
+            
           }
         ]
       };
@@ -310,8 +308,7 @@ describe("Questioner App", function () {
             "title": "How to create data structures",
             "body": "How can i do this and that from time to time in the mix",
             "votes": 10,
-            "upVotes":2,
-            "downVote":0
+            
           },
           {
             "id": 2,
@@ -321,8 +318,7 @@ describe("Questioner App", function () {
             "title": "How to create data structures",
             "body": "How can i do this and that from time to time in the mix",
             "votes": 10,
-            "upVotes":2,
-            "downVote":0
+            
           }
         ]
       };

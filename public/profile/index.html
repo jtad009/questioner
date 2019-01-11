@@ -25,16 +25,16 @@
 
 
   <div class="item3">
-    <div class="feed profile_card">
+    <div class="feed profile_card" id="userProfile">
       <div class="feed_head">
 
 
         <div style="float:left" align="left">
-          <h1 class="username" data-src="3">
+          <h1 class="title" >
             USER PROFILE
           </h1>
         </div>
-        <a class="profile_edit_link" align="right" style="float:right">EDIT PROFILE</a>
+        <a class="profile_edit_link" align="right" style="float:right;cursor: pointer;" onclick="editProfile()">EDIT PROFILE</a>
       </div>
       <div class="feed_body">
         <img src="../images/avatar.jpg" width="150" height="150" class="feed_photos" align="right" />
@@ -49,6 +49,50 @@
 
           <div><b>Answered Questions</b>:<span>5</span> </div>
         </div>
+      </div>
+
+    </div>
+    <div class="feed profile_card" id="editProfile" style="display:none">
+      <div class="feed_head">
+
+
+        <div  align="center">
+          <h1 class="title" data-src="3">
+            USER PROFILE EDIT
+          </h1>
+        </div>
+        
+      </div>
+      
+      <div class="feed_body">
+        <form class="login" action="#" method="get">
+          <div>
+            <label>FIRSTNAME</label>
+            <input type="text" name="firstname" id="firstname" placeholder="Firstname">
+          </div>
+          <div>
+            <label>LASTNAME</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Lastname"></div>
+          <div>
+            <label>EMAIL</label>
+            <input type="text" name="email" id="email" placeholder="email"></div>
+  
+          <div>
+            <label>USERNAME</label>
+            <input type="text" name="username" id="username" placeholder="username">
+          </div>
+  
+          <div>
+            <label>Profile Image</label>
+            <input type="file" name="image" id="image" ></div>
+          
+          <br />
+          <br />
+          <div class="actions">
+  
+            <input type="submit" name="login" value="UPDATE" class="login_button" onclick="showProfile()" style="width:670px">
+          </div>
+        </form>
       </div>
 
     </div>
@@ -295,6 +339,14 @@
     element.style.backgroundColor = color;
   }
   document.getElementById('defaultOpen').click();
+  function showProfile(){
+    document.getElementById('userProfile').style.display = 'block';
+    document.getElementById('editProfile').style.display = 'none'
+  }
+  function editProfile(){
+    document.getElementById('userProfile').style.display = 'none';
+    document.getElementById('editProfile').style.display = 'block'
+  }
 </script>
 
 </html>
