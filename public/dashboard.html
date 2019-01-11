@@ -1,159 +1,284 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/suggestion_tooltip.css">
-    <style>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto:300,400,500" rel="stylesheet">
 
-  </style>
-  </head>
+</head>
 
-        
- 
-   <div class="sidebar">
-    <img src="images/bp-logo-home.png"    width="180px" class="logo" />
-    <div> <img src="images/avatar.jpg" class="user_passport"  /></div>
+
+
+<div class="sidebar">
+    <p class="logo">QUESTIONER ?</p>
+    <div> <img src="images/avatar.jpg" class="user_passport" /></div>
     <div class="navigation">
-       <a href="profile/index.html">View Profile</a>
-        <a href="admin/index.html">Admin Page</a>
-      <a href="dashboard.html">Meetup Listing</a> 
-      <a href="index.html">Logout</a>
-      <br/>
-      
+        <a href="profile/index.html">View Profile</a>
+        <a href="dashboard.html" class="active">Meetup Listing</a>
+        <a href="index.html">Logout</a>
+        <br />
+
     </div>
-  </div>
-  <div class="wrapper">
-    
-  
-  <div class="item3">
+</div>
+<div class="wrapper">
 
-    <!-- meetup listing -->
-     <div class="feeds">
-        <div class="feed">
-                  <div class="feed_head">
-                      <img src="images/avatar.jpg" width="50" height="50" class="feed_photo" />
-                      <div style="float:left" align="left">
-                          <span class="pstname" data-src="3">
-                              <a href="#"   class="username" >Imo Douglas</a><br>
-                          </span>
-                          <span class="feed_timestamp">Sun . 10:40 PM . 14/12/14</span>
-                      </div>
-                  </div>
-                  <div class="feed_body">
-                    <img src="images/54620ef4a1a3e.JPG" width="70%" class="postimg2" align="right">
+
+    <div class="item3">
+
+        <!-- meetup listing -->
+        <div class="feeds">
+            <div class="feed">
+                <div class="feed_head">
+                    <img src="images/avatar.jpg" width="50" height="50" class="feed_photo" />
+                    <div style="float:left;margin-left:12px" align="left">
+                        <p class="pstname" data-src="3">
+                            <a href="#" class="username">Imo Douglas</a>
+                        </p>
+                        <p class="feed_timestamp">Sun . 10:40 PM . 14/12/14</p>
+                    </div>
+                </div>
+                <div class="feed_body">
+                    <img src="images/gplus-header.png" width="100%" class="postimg2" align="center">
+                    <br /><br />
                     <span class="category_title"><strong>Events</strong>-</span>
-                    This is the most amazing bit of concept that has ever gone out to the world and i like every bit of it till date. So tell me who amazes you the most in all things scared.
+                    This is the most amazing bit of concept that has ever gone out to the world and i like every bit of
+                    it till date. So tell me who amazes you the most in all things scared.
                     <div class="_1sk6" style="bottom: 0px;">
-                      TAGS:
-                          <div class="_54_v">
-                              <div class="clearfix">
-                                  
-                                  <div class="_54_w _42ef">
-                                      <div class="clearfix uiTokenizer uiInlineTokenizer">
-                                          <div class="tokenarea" id="tokenarea">
-                                             
-                                                                 <span class="removable uiToken"><span class="uiTokenText">Events</span><input name="tags[]" id="feature" autocomplete="off" type="hidden" value="Events"></span>
-                                                                 <span class="removable uiToken"><span class="uiTokenText">Meetps</span><input name="tags[]" id="feature" autocomplete="off" type="hidden" value="Meetsups"></span>
-                                                                 <span class="removable uiToken"><span class="uiTokenText">Andela</span><input name="tags[]" id="feature" autocomplete="off" type="hidden" value="Andela"></span>
-                                                                 <span class="removable uiToken"><span class="uiTokenText">Hackaton</span><input name="tags[]" id="feature" autocomplete="off" type="hidden" value="Hackaton"></span>
-                                                                 <span class="removable uiToken"><span class="uiTokenText">Hackaton</span><input name="tags[]" id="feature" autocomplete="off" type="hidden" value="Hackaton"></span>
-                                                                 <span class="removable uiToken"><span class="uiTokenText">Hackaton</span><input name="tags[]" id="feature" autocomplete="off" type="hidden" value="Hackaton"></span>
-                                                               </div>
-                                          <div class="uiTypeahead" id="js_8">
-                                              <div class="wrap">
-                                                  <input type="hidden" autocomplete="off" class="hiddenInput" value="">
-                                                  <div class="innerWrap">
-                                                      <input type="text" class="inputtext textInput" id="inputtext" aria-label="" placeholder="" data-placeholder="" aria-expanded="false" aria-labelledby="u_0_ak" tabindex="0" style="width: 20px;border:none;outline:none;">
-                                                      <div class="uiContextualLayerPositioner uiLayer hidden_elem" data-ownerid="js_e" style="width: 454px; left: 26px;">
-                                                          <div class="uiContextualLayer uiContextualLayerBelowLeft">
-                                                              <div style="width: 34px;">
-                                                                  <div class="uiTypeaheadView uiContextualTypeaheadView uiInlineTokenizerView hidden_elem">
-                                                                      <ul class="compact" id="typeahead_list_js_e" role="listbox">
+                        <b>TAGS:</b>
+                        <div class="_54_v">
+                            <div class="clearfix">
 
-                                                                      </ul>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="feed_footer">
-                      <div align="center">
+                                <div class="_54_w _42ef">
+                                    <div class="clearfix uiTokenizer uiInlineTokenizer">
+                                        <div class="tokenarea" id="tokenarea">
+
+                                            <span class="removable uiToken"><span class="uiTokenText">Events</span><input
+                                                    name="tags[]" id="feature" autocomplete="off" type="hidden" value="Events"></span>
+                                            <span class="removable uiToken"><span class="uiTokenText">Meetps</span><input
+                                                    name="tags[]" id="feature" autocomplete="off" type="hidden" value="Meetsups"></span>
+                                            <span class="removable uiToken"><span class="uiTokenText">Andela</span><input
+                                                    name="tags[]" id="feature" autocomplete="off" type="hidden" value="Andela"></span>
+                                            <span class="removable uiToken"><span class="uiTokenText">Hackaton</span><input
+                                                    name="tags[]" id="feature" autocomplete="off" type="hidden" value="Hackaton"></span>
+                                            <span class="removable uiToken"><span class="uiTokenText">Hackaton</span><input
+                                                    name="tags[]" id="feature" autocomplete="off" type="hidden" value="Hackaton"></span>
+                                            <span class="removable uiToken"><span class="uiTokenText">Hackaton</span><input
+                                                    name="tags[]" id="feature" autocomplete="off" type="hidden" value="Hackaton"></span>
+                                        </div>
+                                        <div class="uiTypeahead" id="js_8">
+                                            <div class="wrap">
+                                                <input type="hidden" autocomplete="off" class="hiddenInput" value="">
+                                                <div class="innerWrap">
+                                                    <input type="text" class="inputtext textInput" id="inputtext"
+                                                        aria-label="" placeholder="" data-placeholder="" aria-expanded="false"
+                                                        aria-labelledby="u_0_ak" tabindex="0" style="width: 20px;border:none;outline:none;">
+                                                    <div class="uiContextualLayerPositioner uiLayer hidden_elem"
+                                                        data-ownerid="js_e" style="width: 454px; left: 26px;">
+                                                        <div class="uiContextualLayer uiContextualLayerBelowLeft">
+                                                            <div style="width: 34px;">
+                                                                <div class="uiTypeaheadView uiContextualTypeaheadView uiInlineTokenizerView hidden_elem">
+                                                                    <ul class="compact" id="typeahead_list_js_e" role="listbox">
+
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed_footer">
+                    <div align="center">
                         <span class="meetup_activity_span">
                             <span class="activity_count">4</span>
-                            <a href="question-details.html"  id="view_questions" ><img src="images/visible.png" height="14" title="Questions"></a> &nbsp;&nbsp;
-                            <a href="#"  id="rsvp" ><img src="images/bell.gif" height="13" title="Rsvp"></a> &nbsp;&nbsp;
-                            
-                        </span> 
-                            
-                      </div>
-                  </div>
-        </div>
-        <div class="feed">
-                  <div class="feed_head">
-                      <img src="images/avatar.jpg" width="50" height="50" class="feed_photo" />
-                      <div style="float:left" align="left">
-                          <span class="pstname" data-src="3">
-                              <a href="#"   class="username" >Imo Douglas</a><br>
-                          </span>
-                          <span class="feed_timestamp">Sun . 10:40 PM . 14/12/14</span>
-                      </div>
-                  </div>
-                  <div class="feed_body">
-                    
+                            <a href="question-details.html" id="view_questions" title="view questions">
+                                <ion-icon src="images/eye.svg" style="color:black; font-size:20px"></ion-icon>
+                                &nbsp;&nbsp;
+                                <a href="#" id="rsvp" title="RSVP FOR MEETUP">
+                                    <ion-icon src="images/notifications-outline.svg" style="color:black; font-size:20px"></ion-icon>
+                                </a>
+                                &nbsp;&nbsp;
+
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="feed">
+                <div class="feed_head">
+                    <img src="images/avatar.jpg" width="50" height="50" class="feed_photo" />
+                    <div style="float:left;margin-left:12px" align="left">
+                        <p class="pstname" data-src="3">
+                            <a href="#" class="username">Imo Douglas</a><br>
+                        </p>
+                        <p class="feed_timestamp">Sun . 10:40 PM . 14/12/14</p>
+                    </div>
+                </div>
+                <div class="feed_body">
+
                     <span class="category_title"><strong>Events</strong>-</span>
-                    This is the most amazing bit of concept that has ever gone out to the world and i like every bit of it till date. So tell me who amazes you the most in all things scared.
-                  </div>
-                  <div class="feed_footer">
-                      <div align="center">
+                    This is the most amazing bit of concept that has ever gone out to the world and i like every bit of
+                    it till date. So tell me who amazes you the most in all things scared.
+                    <div class="_1sk6" style="bottom: 0px;">
+                        <b>TAGS:</b>
+                        <div class="_54_v">
+                            <div class="clearfix">
+
+                                <div class="_54_w _42ef">
+                                    <div class="clearfix uiTokenizer uiInlineTokenizer">
+                                        <div class="tokenarea" id="tokenarea">
+
+                                            <span class="removable uiToken"><span class="uiTokenText">Events</span><input
+                                                    name="tags[]" id="feature" autocomplete="off" type="hidden" value="Events"></span>
+                                            <span class="removable uiToken"><span class="uiTokenText">Meetps</span><input
+                                                    name="tags[]" id="feature" autocomplete="off" type="hidden" value="Meetsups"></span>
+                                            <span class="removable uiToken"><span class="uiTokenText">Andela</span><input
+                                                    name="tags[]" id="feature" autocomplete="off" type="hidden" value="Andela"></span>
+                                            <span class="removable uiToken"><span class="uiTokenText">Hackaton</span><input
+                                                    name="tags[]" id="feature" autocomplete="off" type="hidden" value="Hackaton"></span>
+                                            <span class="removable uiToken"><span class="uiTokenText">Hackaton</span><input
+                                                    name="tags[]" id="feature" autocomplete="off" type="hidden" value="Hackaton"></span>
+                                            <span class="removable uiToken"><span class="uiTokenText">Hackaton</span><input
+                                                    name="tags[]" id="feature" autocomplete="off" type="hidden" value="Hackaton"></span>
+                                        </div>
+                                        <div class="uiTypeahead" id="js_8">
+                                            <div class="wrap">
+                                                <input type="hidden" autocomplete="off" class="hiddenInput" value="">
+                                                <div class="innerWrap">
+                                                    <input type="text" class="inputtext textInput" id="inputtext"
+                                                        aria-label="" placeholder="" data-placeholder="" aria-expanded="false"
+                                                        aria-labelledby="u_0_ak" tabindex="0" style="width: 20px;border:none;outline:none;">
+                                                    <div class="uiContextualLayerPositioner uiLayer hidden_elem"
+                                                        data-ownerid="js_e" style="width: 454px; left: 26px;">
+                                                        <div class="uiContextualLayer uiContextualLayerBelowLeft">
+                                                            <div style="width: 34px;">
+                                                                <div class="uiTypeaheadView uiContextualTypeaheadView uiInlineTokenizerView hidden_elem">
+                                                                    <ul class="compact" id="typeahead_list_js_e" role="listbox">
+
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed_footer">
+                    <div align="center">
                         <span class="meetup_activity_span">
                             <span class="activity_count">4</span>
-                            <a href="question-details.html"  id="view_questions" ><img src="images/visible.png" height="14" title="Questions"></a> &nbsp;&nbsp;
-                            <a href="#"  id="rsvp" ><img src="images/bell.gif" height="13" title="Rsvp"></a> &nbsp;&nbsp;
-                        </span> 
-                            
-                      </div>
-                  </div>
-        </div>
-        <div class="feed">
-                    <div class="feed_head">
-                        <img src="images/avatar.jpg" width="50" height="50" class="feed_photo" />
-                        <div style="float:left" align="left">
-                            <span class="pstname" data-src="3">
-                                <a href="#"   class="username" >Imo Douglas</a><br>
-                            </span>
-                            <span class="feed_timestamp">Sun . 10:40 PM . 14/12/14</span>
+                            <a href="#" id="view_questions" title="view questions">
+                                <ion-icon src="images/eye.svg" style="color:black; font-size:20px"></ion-icon>
+                                &nbsp;&nbsp;
+                                <a href="#" id="rsvp" title="RSVP FOR MEETUP">
+                                    <ion-icon src="images/notifications-outline.svg" style="color:black; font-size:20px"></ion-icon>
+                                </a>
+                                &nbsp;&nbsp;
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="feed">
+                <div class="feed_head">
+                    <img src="images/avatar.jpg" width="50" height="50" class="feed_photo" />
+                    <div style="float:left;margin-left:12px" align="left">
+                        <p class="pstname" data-src="3">
+                            <a href="#" class="username">Imo Douglas</a><br>
+                        </p>
+                        <p class="feed_timestamp">Sun . 10:40 PM . 14/12/14</p>
+                    </div>
+                </div>
+                <div class="feed_body">
+                    <img src="images/bg123.jpg" height="70%" width="100%" class="postimg2" align="center">
+                    <br /><br />
+                    <span class="category_title"><strong>Events</strong>-</span>
+                    This is the most amazing bit of concept that has ever gone out to the world and i like every bit of
+                    it till date. So tell me who amazes you the most in all things scared.
+                    <div class="_1sk6" style="bottom: 0px;">
+                        <b>TAGS:</b>
+                        <div class="_54_v">
+                            <div class="clearfix">
+
+                                <div class="_54_w _42ef">
+                                    <div class="clearfix uiTokenizer uiInlineTokenizer">
+                                        <div class="tokenarea" id="tokenarea">
+
+                                            <span class="removable uiToken"><span class="uiTokenText">Events</span><input
+                                                    name="tags[]" id="feature" autocomplete="off" type="hidden" value="Events"></span>
+                                            <span class="removable uiToken"><span class="uiTokenText">Meetps</span><input
+                                                    name="tags[]" id="feature" autocomplete="off" type="hidden" value="Meetsups"></span>
+                                            <span class="removable uiToken"><span class="uiTokenText">Andela</span><input
+                                                    name="tags[]" id="feature" autocomplete="off" type="hidden" value="Andela"></span>
+                                            <span class="removable uiToken"><span class="uiTokenText">Hackaton</span><input
+                                                    name="tags[]" id="feature" autocomplete="off" type="hidden" value="Hackaton"></span>
+                                            <span class="removable uiToken"><span class="uiTokenText">Hackaton</span><input
+                                                    name="tags[]" id="feature" autocomplete="off" type="hidden" value="Hackaton"></span>
+                                            <span class="removable uiToken"><span class="uiTokenText">Hackaton</span><input
+                                                    name="tags[]" id="feature" autocomplete="off" type="hidden" value="Hackaton"></span>
+                                        </div>
+                                        <div class="uiTypeahead" id="js_8">
+                                            <div class="wrap">
+                                                <input type="hidden" autocomplete="off" class="hiddenInput" value="">
+                                                <div class="innerWrap">
+                                                    <input type="text" class="inputtext textInput" id="inputtext"
+                                                        aria-label="" placeholder="" data-placeholder="" aria-expanded="false"
+                                                        aria-labelledby="u_0_ak" tabindex="0" style="width: 20px;border:none;outline:none;">
+                                                    <div class="uiContextualLayerPositioner uiLayer hidden_elem"
+                                                        data-ownerid="js_e" style="width: 454px; left: 26px;">
+                                                        <div class="uiContextualLayer uiContextualLayerBelowLeft">
+                                                            <div style="width: 34px;">
+                                                                <div class="uiTypeaheadView uiContextualTypeaheadView uiInlineTokenizerView hidden_elem">
+                                                                    <ul class="compact" id="typeahead_list_js_e" role="listbox">
+
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="feed_body">
-                      <img src="images/54620ef4a1a3e.JPG" width="70%" class="postimg2" align="right">
-                      <span class="category_title"><strong>Events</strong>-</span>
-                      This is the most amazing bit of concept that has ever gone out to the world and i like every bit of it till date. So tell me who amazes you the most in all things scared.
+                </div>
+                <div class="feed_footer">
+                    <div align="center">
+                        <span class="meetup_activity_span">
+                            <span class="activity_count">4</span>
+                            <a href="#" id="view_questions" title="view questions">
+                                <ion-icon src="images/eye.svg" style="color:black; font-size:20px"></ion-icon>
+                                &nbsp;&nbsp;
+                                <a href="#" id="rsvp" title="RSVP FOR MEETUP">
+                                    <ion-icon src="images/notifications-outline.svg" style="color:black; font-size:20px"></ion-icon>
+                                </a>
+                                &nbsp;&nbsp;
+                        </span>
+
                     </div>
-                    <div class="feed_footer">
-                        <div align="center">
-                          <span class="meetup_activity_span">
-                              <span class="activity_count">4</span>
-                              <a href="question-details.html"  id="view_questions" ><img src="images/visible.png" height="14" title="Questions"></a> &nbsp;&nbsp;
-                              <a href="#"  id="rsvp" ><img src="images/bell.gif" height="13" title="Rsvp"></a> &nbsp;&nbsp;
-                          </span> 
-                              
-                        </div>
-                    </div>
+                </div>
+            </div>
         </div>
-         </div>
-    <!-- end meetup listing -->
-  </div>  
-  
-  <!-- <div class="footer">Footer</div> -->
-  </div>
-  
+        <!-- end meetup listing -->
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
+    <!-- <div class="footer">Footer</div> -->
+</div>
+
 </html>
-  <!-- Wrapper Ends -->

@@ -1,41 +1,50 @@
- <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="css/login.css">
-    <style>
+<!DOCTYPE html>
+<html>
 
-    </style>
-  </head>
-  <body>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/login.css">
+  <title>Questioner Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto:300,400,500" rel="stylesheet">
+</head>
+
+<body>
   <div class="wrapper">
-    
+
     <div class="inner-div">
-      <h1><img src="images/bp-logo-home.png" class="logo" align="center"/></h1>
+      <h1 class="logo" style="color:white;font-size: 42px">QUESTIONER ?</h1>
 
-        <form class="login" action="dashboard.html" method="get">
-             
-             
-            <div>
-              <input type="text" name="username" id="username" placeholder="username"></div>
-             
-            <div>
-              <input type="password" name="password" id="password" placeholder="password"></div>
-              
-              <br/>
-                <br/>
-            <div class="actions">
-            
-              <input type="submit" name="login" value="Login"> <a href="/forgot">I forgot my password</a>
-            </div>
-        </form>
-        <br/> 
-        <div class="account">
-          <p style="text-align: center;">Create a new account <a href="sign-up.html">here</a>.</p>
+      <form class="login" action="admin/index.html" method="get">
+
+
+        <div>
+          <label>USERNAME</label>
+          <input type="text" name="username" id="username" placeholder="username"></div>
+
+        <div>
+          <label>PASSWORD</label><a href="/forgot" class="forgot_pw_link">FORGOT PASSWORD?</a>
+          <input type="password" name="password" id="password" placeholder="password"></div>
+
+        <br />
+        <br />
+        <div class="actions">
+
+          <input type="submit" name="login" value="LOGIN" class="login_button">
+          <!--<a href="/forgot">I forgot my password</a>-->
         </div>
+      </form>
+      <br />
+      <div class="a-divider">
+        <h5>NEW TO QUESTIONER?</h5>
+      </div>
+      <div class="account" align="center">
+        <a href="sign-up.html" class="signup_link">CREATE YOUR QUESTIONER ACCOUNT</a>
+      </div>
 
-        
+
     </div>
-  
-       
+
+
   </div>
 </body>
+
 </html>

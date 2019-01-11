@@ -1,0 +1,10 @@
+{
+    "presets": [
+        "env",
+        "stage-3",
+        "latest"
+    ],
+    "plugins": [
+        "transform-object-rest-spread"
+    ]
+}
