@@ -71,6 +71,24 @@ body
 }
 .inner-div
 {
+<<<<<<< HEAD
+     /*background-color: #f3f2ef;*/
+     border-radius: 3px;
+     width: 500px;
+     height: 100px; 
+}
+.inner-div>h1{
+    background-color:#132437;
+}
+ .navigation > div >a,a{
+      text-align: right;
+      color:#0CAD99 ;
+      padding:3px;
+      margin-left:12px;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+=======
   /*background-color: #f3f2ef;*/
   border-radius: 3px;
   width: 500px;
@@ -89,6 +107,7 @@ body
   text-decoration: none;
   text-transform: capitalize;
 }
+>>>>>>> ft-admin-UI-page-162799080
 h1{
   background: #fcfcfc;
 }
