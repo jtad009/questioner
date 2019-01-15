@@ -350,7 +350,7 @@ a{
 }
 .tabs{
   max-height:auto;
-  width:700px;
+  max-width:700px;
 }
 .categories{
   font-size:13px; color:#0CAD99; padding-bottom:1px; margin-right:5px;
@@ -367,7 +367,43 @@ a{
 #catHolder{
   border-radius:4px; padding:5px; padding-top:1px;
 }
+#items{
+  list-style:none;
+  margin:0px;
+  margin-top:4px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-bottom:3px;
+  font-size:17px;
+  color: #333333;
+  
+}
+hr { width: 85%; 
+  background-color:#E4E4E4;
+  border-color:#E4E4E4;
+    color:#E4E4E4;
+}
+#cntnr{
+  display:none;
+  position:fixed;
+  border:1px solid #B2B2B2;
+  width:150px;      background:#F9F9F9;
+  box-shadow: 3px 3px 2px #E9E9E9;
+  border-radius:4px;
+}
 
+li{
+  
+  padding: 3px;
+  padding-left:10px;
+}
+
+
+#items :hover{
+   color: white;
+  background:#284570;
+  border-radius:2px;
+}
 .wrapper_2
 {
   display: flex;
@@ -385,26 +421,15 @@ a{
 .logo{
   margin-left:15px;
   font-family: 'Roboto', sans-serif;
-  font-size:26px;
+  font-size:30px;
   color:white;
   font-style: normal;
   text-align: center;
   font-weight:bold;
   text-shadow: 2px 2px #000
 }
-.tablink{
-  background-color: #f6f6f6;
-  color: #0CAD99;
-  float: left;
-  border:none;
-  outline: none;
-  cursor: pointer;
-  font-size: 17px;
-  width:25%;
-  padding: 10px;
-  border-radius: 4px 4px 0px 0px
-}
-.profile_card>input[type="text"],.profile_card>input[type="password"] {
+
+.profile_card input[type="text"],.profile_card input[type="password"] {
   padding:12px;
   border:none;
   border:1px solid #ccc;
@@ -415,8 +440,23 @@ a{
   border-radius: 10px;
   height:50px;
   color:#0CAD99;
+  width:480px;
+}
+
+.login_buttonn{
+  background: none;
+  border:1px solid #0CAD99;
+  border-radius: 10px;
+  height:50px;
+  color:#0CAD99;
+  display: block;
   width:490px;
 }
+
+.actions{
+  text-align: center;
+}
+
 .login {
   grid-column-end: span 2;
   width: auto;
@@ -471,3 +511,38 @@ a{
 #catHolder{
   border-radius:4px; padding:5px; padding-top:1px;border-bottom:#F6F6F6 thin solid;
 }
+.dropbtn {
+  background-color: #fff;;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
+
+.dropdown-content a:hover {background-color: #0CAD99;color:#fff}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #0CAD99;color:#fff}
