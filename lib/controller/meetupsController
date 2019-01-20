@@ -16,7 +16,7 @@ const MEETUPS = [
     id: 1,
     createdOn: 'Sun . 10:40 PM . 14/12/14',
     location: 'lagos',
-    images: [],
+    images: ['http://localhost:5000/images/54620ef4a1a3e.JPG'],
     topic: 'Hackerton in yaba',
     happeningOn: '2018-09-20',
 
@@ -26,7 +26,7 @@ const MEETUPS = [
     id: 2,
     createdOn: 'Sun . 10:40 PM . 14/12/14',
     location: 'lagos',
-    images: ['http://localhost:5000/images/54620ef4a1a3e.JPG'],
+    images: [],
     topic: 'Hackerton in yaba',
     happeningOn: '2018-09-21',
   },

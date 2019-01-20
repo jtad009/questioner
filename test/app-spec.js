@@ -6,6 +6,7 @@ const server = rewire('../server');
 const app = rewire('../app');
 const meetup = rewire('../lib/routes/meetups');
 const question = rewire('../lib/routes/questions');
+const meetupController = rewire('../lib/controller/meetupsController');
 describe("Questioner App", function () {
   it("Loads the home page", function (done) {
     request(app).get("/").expect(200).end(done);
@@ -14,7 +15,7 @@ describe("Questioner App", function () {
   describe("Get /api/meetup/:id", function (done) {
     it('returns a meetup event when id is supplied', function () {
       return request(app).
-        get('/api/v1/meetups/1').
+        get('/api/meetups/v1/1').
         set('Accept', 'application/json').
         expect(200, {
           "status": 200,
@@ -24,7 +25,7 @@ describe("Questioner App", function () {
               "id": 1,
               "createdOn": "Sun . 10:40 PM . 14/12/14",
               "location": "lagos",
-              "images": [],
+              "images": ['http://localhost:5000/images/54620ef4a1a3e.JPG'],
               "topic": "Hackerton in yaba",
               "happeningOn": "2018-09-20"
             }
@@ -34,7 +35,7 @@ describe("Questioner App", function () {
     it('it should throw a 404 error when a wrong meetup Id is supplied.', function () {
       let def = this.def;
       request(app)
-        .get("/api/v1/meetups/12")
+        .get("/api/meetups/v1/12")
         .set('Accept', 'application/json')
         .expect('Content-type', /json/)
         .expect(404)
@@ -53,33 +54,32 @@ describe("Questioner App", function () {
         "status": 200,
         "data": [
           {
-            tags: ["Events", "Meetsups", "Andela", "Hackerton"],
+            tags: ['Events', 'Meetsups', 'Andela', 'Hackerton'],
             id: 1,
-            createdOn: "Sun . 10:40 PM . 14/12/14",
-            location: "lagos",
-            images: [],
-            topic: "Hackerton in yaba",
-            happeningOn: "2018-09-20"
+            createdOn: 'Sun . 10:40 PM . 14/12/14',
+            location: 'lagos',
+            images: ['http://localhost:5000/images/54620ef4a1a3e.JPG'],
+            topic: 'Hackerton in yaba',
+            happeningOn: '2018-09-20',
+        
           },
           {
-            tags: ["Events", "Meetsups", "Andela", "Hackerton"],
+            tags: ['Events', 'Meetsups', 'Andela', 'Hackerton'],
             id: 2,
-            createdOn: "Sun . 10:40 PM . 14/12/14",
-            location: "lagos",
-            images: [
-              "http://localhost:5000/images/54620ef4a1a3e.JPG"
-            ],
-            topic: "Hackerton in yaba",
-            happeningOn: "2018-09-21"
-          }
+            createdOn: 'Sun . 10:40 PM . 14/12/14',
+            location: 'lagos',
+            images: [],
+            topic: 'Hackerton in yaba',
+            happeningOn: '2018-09-21',
+          },
         ]
       }
         ;
-      meetup.__set__('MEETUPS', this.def);
+      meetupController.__set__('MEETUPS', this.def);
     });
     it('returns a list of all meetup', function () {
       let def = this.def;
-      return request(app).get('/api/v1/meetups/').
+      return request(app).get('/api/meetups/v1/').
         set('Accept', 'application/json').
         expect(200, def, done);
     });
@@ -109,12 +109,12 @@ describe("Questioner App", function () {
           }
         ]
       };
-      meetup.__set__('MEETUPS', this.def);
+      meetupController.__set__('MEETUPS', this.def);
     });
     it('Creates a new meetup event', function () {
       let def = this.def;
       request(app)
-        .post("/api/v1/meetups/")
+        .post("/api/meetups/v1/")
         .set('Accept', 'application/x-www-form-urlencoded')
         .send({
           "id": 9,
@@ -126,8 +126,9 @@ describe("Questioner App", function () {
           "images": []
         })
         .expect('Content-type', /json/)
-        .expect(200)
+        .expect(201)
         .end(function (error, response) {
+          console.log(response.body);
           expect(response.body.data[0]).to.have.property('id');
           expect(response.body.data[0].id).to.not.equal(5);
           expect(response.body.data[0].id).to.equal(9);
@@ -140,11 +141,11 @@ describe("Questioner App", function () {
     it('Throw a 404 error if the user pressed the post button in error and supplied an empty meetup.', function () {
       let def = this.def;
       request(app)
-        .post("/api/v1/meetups/")
+        .post("/api/meetups/v1/")
         .set('Accept', 'application/x-www-form-urlencoded')
         .send({})
         .expect('Content-type', /json/)
-        .expect(200)
+        .expect(401)
         .end(function (error, response) {
           expect(response.body).to.have.property('status');
           expect(response.body.status).to.equal(404);
@@ -180,7 +181,7 @@ describe("Questioner App", function () {
           }
         ]
       };
-      meetup.__set__('MEETUPS', this.def);
+      meetupController.__set__('MEETUPS', this.def);
     });
     it('returns a meetup', function () {
       let def = this.def;
@@ -262,7 +263,7 @@ describe("Questioner App", function () {
     it('Should RSVP a meetup if it exist and return an array of keys and values', function () {
       let def = this.def;
       request(app)
-        .post("/api/v1/meetups/2/rsvp")
+        .post("/api/meetups/v1/2/rsvp")
         .set('Accept', 'application/x-www-form-urlencoded')
         .send({
           "meetup": 2,
@@ -283,7 +284,7 @@ describe("Questioner App", function () {
     it('Should return a 404when RSVPing and presenting the wrong meetup id', function (done) {
       let def = this.def;
       request(app)
-        .post("/api/v1/meetups/9/rsvp")
+        .post("/api/meetups/v1/9/rsvp")
         .set('Accept', 'application/x-www-form-urlencoded')
         .send({
           "meetup": 2,
@@ -322,7 +323,7 @@ describe("Questioner App", function () {
           }
         ]
       };
-      meetup.__set__('MEETUPS', this.def);
+      meetupController.__set__('MEETUPS', this.def);
     });
     it('Downvotes a meetup question and returns a key and value pair', function () {
       let def = this.def;
@@ -382,7 +383,7 @@ describe("Questioner App", function () {
           }
         ]
       }
-      meetup.__set__('MEETUPS', this.def);
+      meetupController.__set__('MEETUPS', this.def);
     });
     it('upvotes a meetup question and returns a key and value pair', function () {
       let def = this.def;
