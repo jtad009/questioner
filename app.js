@@ -3,9 +3,20 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import questionsRoutes from './lib/routes/questions';
 import meetupsRoutes from './lib/routes/meetups';
+import knex from 'knex';
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+const db = knex({
+  client: 'pg',
+  connection: {
+    host: '127.0.0.1',
+    user: 'israeledet',
+    password: 'ct320d',
+    database: 'Questioner'
+  }
+});
+
 /*
  *@param request
  *@param response
@@ -28,6 +39,6 @@ app.use((request, response, next) => {
   }
   next();
 });
-app.use('/api/v1/meetups', meetupsRoutes);
+app.use('/api/meetups', meetupsRoutes);
 app.use('/api/v1/questions', questionsRoutes);
 module.exports = app;
